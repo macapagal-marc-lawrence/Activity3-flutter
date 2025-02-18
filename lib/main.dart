@@ -51,7 +51,8 @@ class _MyAppState extends State<MyApp> {
             });
           }),
 
-        )
+        ),
+        CupertinoButton(child: Text('Login'), onPressed: (){})
       ],
     )));
   }
