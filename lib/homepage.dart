@@ -64,13 +64,14 @@ class _HomepageState extends State<Homepage> {
   }
 
   String _getName(int index) {
-    List<String> names = ["Mac"];
+    List<String> names = ["Mac", "kevin"];
     return names[index];
   }
 
   String _getImagePath(int index) {
     List<String> imagePaths = [
       "images/mac.jpg",
+      "images/kevin.jpg",
 
     ];
     return imagePaths[index];
