@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'crispage.dart';
 import 'kevinpage.dart';
+import 'macpage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -95,6 +96,11 @@ class _HomepageState extends State<Homepage> {
             context,
             MaterialPageRoute(builder: (context) => const KevinPage()),
 
+          );
+        } else if (name == "Mac") {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const MacPage()),
           );
 
         } else {
