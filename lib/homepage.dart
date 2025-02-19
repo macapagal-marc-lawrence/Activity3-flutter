@@ -4,6 +4,7 @@ import 'crispage.dart';
 import 'kevinpage.dart';
 import 'macpage.dart';
 import 'charlespage.dart';
+import 'jenzellepage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -107,6 +108,12 @@ class _HomepageState extends State<Homepage> {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const CharlesPage()),
+          );
+
+        } else if (name == "Jenzelle") {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const JenzellePage()),
           );
 
         } else {
