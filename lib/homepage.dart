@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'crispage.dart';
+import 'kevinpage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -65,7 +66,7 @@ class _HomepageState extends State<Homepage> {
   }
 
   String _getName(int index) {
-    List<String> names = ["Mac", "kevin", "Charles", "Jenzelle", "Cris"];
+    List<String> names = ["Mac", "Kevin", "Charles", "Jenzelle", "Cris"];
     return names[index];
   }
 
@@ -89,8 +90,14 @@ class _HomepageState extends State<Homepage> {
             context,
             MaterialPageRoute(builder: (context) => const CrisPage()), // Navigate to CrisPage
           );
+        } else if (name == "Kevin"){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const KevinPage()),
+
+          );
+
         } else {
-          // Navigate to a generic team member page, or handle other cases
           print("Tapped on $name"); // For now, just print the name
         }
 

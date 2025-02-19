@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class CrisPage extends StatelessWidget {
-  const CrisPage({super.key});
+class KevinPage extends StatelessWidget {
+  const KevinPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class CrisPage extends StatelessWidget {
             children: [
               Center(
                 child: CircleAvatar(
-                  backgroundImage: AssetImage('images/criss.jpg'),
+                  backgroundImage: AssetImage('images/kevin.jpg'),
                   radius: 100,
                 ),
               ),
@@ -27,18 +27,18 @@ class CrisPage extends StatelessWidget {
               Center(
                 child: Column(
                   children: [
-                    _buildText("Cris Gabriel I. Juanatas",
+                    _buildText("Kevin  V. Dizon",
                         style: const TextStyle(
                             fontSize: 24, fontWeight: FontWeight.bold)),
                     _buildText("Frontend Developer"),
-                    _buildText("+639684601144"),
-                    _buildText("juanatascris1@gmail.com"),
+                    _buildText("09674512396"),
+                    _buildText("dizonvkn@gmail.com"),
                   ],
                 ),
               ),
               const SizedBox(height: 20),
               _buildSection("Biography",
-                  "A BSIT graduate specializing in front-end development and web design. Passionate about creating innovative and modern digital experiences.",
+                  "I am a passionate Frontend Developer with experience in building dynamic websites and applications. I have a keen interest in optimizing system performance and creating scalable solutions.",
                   color: Colors.green.shade100,
                   icon: Icons.person),
               _buildSection("Skills", [
@@ -47,15 +47,15 @@ class CrisPage extends StatelessWidget {
                 "Programming: C++, HTML, PHP, CSS"
               ], color: Colors.green.shade100, icon: Icons.code),
               _buildSection("Education", [
-                "BSIT - Holy Cross College (2022-2025)",
-                "High School - Arayat Holy Child Educational Foundation Inc. (2020-2022)",
+                "Bachelor of Science in Information Technology - Holy Cross College (2021-2022)",
+                "Justino Sevilla SchoolMangga Cacutud (2016-2020)",
                 "High School - Gatiawin High School (2016-2020)",
-                "High School - Gatiawin Elementary School (2009-2015)"
+                "Bitas Elementary SchoolSan Roque Bitas (2010-2016)"
               ], color: Colors.green.shade100, icon: Icons.school),
               _buildSection("Portfolio", [
-                "Point of Sale System - PHP, MySQL, Bootstrap",
-                "E-commerce Website - Full-stack implementation",
-                "Inventory System - Built with Laravel"
+                "Point of Sale (POS)",
+                "E-commerce Website",
+                "Inventory Management System"
               ], color: Colors.green.shade100, icon: Icons.work),
               _buildSection("References",
                   "Available upon request. Contact:\nJohn Doe - Lead Developer, XYZ Company\nJane Smith-CТО, АВС Corporation",
