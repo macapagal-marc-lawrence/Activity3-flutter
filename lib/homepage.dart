@@ -35,7 +35,7 @@ class _HomepageState extends State<Homepage> {
                     children: [
                       Center( // Center the welcome text
                         child: const Text(
-                          "Welcome to our group resume website. Click on a member's to learn more!",
+                          "Welcome to our group resume application. Click on a member's to learn more!",
                           style: TextStyle(fontSize: 20),
                           textAlign: TextAlign.center, // Important for multi-line text
                         ),
