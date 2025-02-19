@@ -69,7 +69,7 @@ class _HomepageState extends State<Homepage> {
   }
 
   String _getName(int index) {
-    List<String> names = ["Mac", "Kevin", "Charles", "Jenzelle", "Cris"];
+    List<String> names = ["Mac", "Kevin", "Charles", "Jenzelle", "Cris", "John Eric"];
     return names[index];
   }
 
@@ -80,6 +80,7 @@ class _HomepageState extends State<Homepage> {
       "images/charles.jpg",
       "images/jenzelle.jpg",
       "images/criss.jpg",
+      "images/erics.jpg",
 
     ];
     return imagePaths[index];
@@ -114,6 +115,12 @@ class _HomepageState extends State<Homepage> {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const JenzellePage()),
+          );
+
+        } else if (name == "John Eric") {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const JohnEricPage()),
           );
 
         } else {
