@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 void main() {
   runApp(CupertinoApp(
     theme: CupertinoThemeData(
-      brightness: Brightness.dark
+      brightness: Brightness.light
     ),
     debugShowCheckedModeBanner: false,
     home: MyApp(),
