@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'crispage.dart';
 import 'kevinpage.dart';
 import 'macpage.dart';
+import 'charlespage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -101,6 +102,11 @@ class _HomepageState extends State<Homepage> {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const MacPage()),
+          );
+        } else if (name == "Charles") {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const CharlesPage()),
           );
 
         } else {
