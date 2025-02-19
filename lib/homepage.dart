@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'crispage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -83,7 +84,16 @@ class _HomepageState extends State<Homepage> {
   Widget _buildTeamMemberWithImage(String name, String imagePath) {
     return GestureDetector(
       onTap: () {
-        print("Tapped on $name");
+        if (name == "Cris") {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const CrisPage()), // Navigate to CrisPage
+          );
+        } else {
+          // Navigate to a generic team member page, or handle other cases
+          print("Tapped on $name"); // For now, just print the name
+        }
+
       },
       child: Padding(
         padding: const EdgeInsets.all(16.0),
